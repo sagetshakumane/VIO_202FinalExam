@@ -1,0 +1,121 @@
+@font-face {
+    font-family:marv ;
+    src: url("../Media/Fonts/Marvind.ttf");
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: black;
+    margin: 0;
+}
+
+.book{
+    position: relative;
+    top: 5vh;
+    left: 11vw;
+    margin: 0;
+}
+.book iframe{
+    position: absolute;
+    z-index: 1;
+}
+.cover{
+    visibility: hidden;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    width: 900px;
+    height: 506.2px;
+   
+}
+.cover:hover{
+    transform: scaleX(-1);
+    translate: -100% 0%;
+}
+.cover img{
+    position: absolute;
+    width: 45vw;
+}
+.flip{
+    transform: scaleX(-1);
+}
+.transIn{
+    border-radius: 50%;
+    position: absolute;
+    z-index: 10000;
+    width: 100vw;
+    height: 100vw;
+    filter: blur(2vw);
+    background-color: rgba(255, 255, 255, 0);
+    scale: .003;
+    visibility: hidden;
+    animation: blurIt 1s;
+}
+@keyframes blurIt {
+    0%{
+        visibility: visible;
+        background-color: blueviolet;
+        scale: 10;
+    }
+    
+    100%{
+        visibility: visible;
+    }
+}
+iframe{
+    z-index: 0;
+    width: 75vw;
+    height: 42.1875vw;
+}
+.backDivButton{
+    position: relative;
+    z-index: 20;
+}
+button{
+    
+    position: absolute;
+    border: none;
+    background:radial-gradient(#f15a24 50%,yellow );
+    padding: 50px;
+    margin: 0;
+    border-radius: 50%;
+    margin-left:-30px ;
+    margin-top: -30px;
+    transition: 2s;
+    cursor: pointer;
+}
+button::before{
+    margin: 0;
+    content: '';
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    top: 0;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 175, 14);
+    scale: 1.3;
+    filter: blur(5px);
+    animation: sclaeBack 2.5s infinite ease-in-out;
+}
+@keyframes sclaeBack {
+    50%{
+        scale: 1.15;
+    }
+}
+button span{
+    font-size: 2em;
+    font-family: 'marv';
+    color: white;
+    transition: 1s;
+}
+.backToProjects{
+    padding: 200vw !important;
+    margin-left: -100vw !important;
+    margin-top: -100vw !important;
+}
+button:hover span{
+    opacity: 0;
+}

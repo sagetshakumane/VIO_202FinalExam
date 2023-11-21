@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="promo.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="backDivButton"><button onclick="Back()"><span>back</span></button></div>
+    <div class="transIn"></div>
+    <div class="promo">
+        <div class="book">
+            <div class="cover"></div>
+            <iframe width="940" height="891.379" src="https://xd.adobe.com/embed/ba5cefeb-7c75-4a25-a38b-948f60507faf-ef0f/?fullscreen&hints=off" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+    <script>
+        setTimeout(()=>{
+            var In = document.querySelector('.transIn');
+            In.classList.add('transHide');
+        },1800);
+        function Back(){
+            backbuton = document.querySelector('.backDivButton button');
+            backbuton.classList.add('backToProjects');
+            setTimeout(()=>{
+                window.location = '../Projects.html';
+            },1000)
+        }   
+    </script>
+</body>
+</html>

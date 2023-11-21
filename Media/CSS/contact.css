@@ -1,0 +1,120 @@
+html{
+    width: 100vw;
+    height: 100vh;
+    cursor: none;
+}
+body{
+    cursor: url('../IMG/Page_4/pen.png'), auto;
+    background-color: #e8b666;
+    overflow: hidden;
+    cursor: none;
+
+}
+.backgroundC img{
+    position: absolute;
+    left: 29vw;
+    top:-10vh;
+    height: 100vh;
+    transform: scale(2);
+    cursor: none;
+
+}
+.deskItems img{
+    position: absolute;
+    z-index: 1;
+    width: 15vw;
+    top: 40vh;
+    left: 10vw;
+    cursor: none;
+
+}
+.cursor-use {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 20vw;
+    z-index: 3;
+    translate: -58% -60%;
+    cursor: none;
+
+}
+.contactPage #form{
+    position: absolute;
+    width: 35vw;
+    top: 12vh;
+    left: 32vw;
+}
+.contactPage #signH{
+    position: absolute;
+    left: 45vw;
+    top: 70vh;
+    width: 15vw;
+    z-index: 4;
+}
+#home{
+    position: absolute;
+    z-index: 2;
+    width: 8vw;
+    top: 60vh;
+    left: 51vw;
+}
+.ContactOP{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#OpenCon{
+    opacity: 0;
+    visibility: hidden;
+    animation: openCon 3s;
+    z-index: 10000;
+
+}
+@keyframes openCon {
+    0%{
+        visibility: visible;
+        opacity: 1;
+        margin-top: -800vh;
+        margin-left: -500%;
+        transform: scale(10);
+        position: absolute;
+        z-index: 10000;
+    }
+    80%{
+        opacity: 1;
+    }
+    100%{
+        margin: 0;
+        visibility: visible;
+        opacity: 0;
+        transform: scale(1);
+        z-index: 10000;
+
+    }
+}
+.backHome{
+    position: absolute;
+    top: 0;
+    bottom: 0%;
+    width: 100vw;
+    height: 100vh;
+    z-index: 20000;
+    background-color: #e8b666;
+    translate: 100% 0%;
+    transition: 1.5s;
+}
+.slideIN{
+    translate: -.4% 0%;
+}
+.colorChange{
+    background-color: red;
+}
+@keyframes sildeColor {
+      
+    100%{
+        /*translate: 0% 0%;*/
+    }
+}

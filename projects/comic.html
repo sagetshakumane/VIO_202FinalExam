@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="comic.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="backDivButton"><button onclick="Back()"><span>back</span></button></div>
+    <div class="transIn"></div>
+    <div class="book">
+        <div class="cover"><!--img src="cover.png" alt=""--></div>
+        <iframe width="900" height="506.25" src="https://xd.adobe.com/embed/59bba46d-50e4-495f-aa99-11e5f361f3e2-0ce8/?fullscreen&hints=off" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <script>
+        function Back(){
+            backbuton = document.querySelector('.backDivButton button');
+            backbuton.classList.add('backToProjects');
+            setTimeout(()=>{
+                window.location = '../Projects.html';
+            },1000)
+        }   
+    </script>
+</body>
+</html>

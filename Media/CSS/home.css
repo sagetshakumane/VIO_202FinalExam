@@ -1,0 +1,237 @@
+@media screen and (min-width:960px) {
+    body{
+        background-color: black;
+        color: white;
+        overflow: hidden;
+
+    }
+    nav img{
+        margin: 0;
+        z-index: 1;
+        cursor: pointer;
+    }
+    nav{
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        z-index: 2;
+    }
+    .nav_1{
+        position: absolute;
+        top:-10vh;
+        left:0vw;
+        width: 25vw;
+        transform: scale(1);
+        z-index: 2;
+        animation: OpenSleep 5s ease-out ;
+
+    }
+    .nav_2{
+        position: absolute;
+        width: 25vw;
+        left: 10%;
+        bottom: 5%;
+        z-index: 2 !important;
+        animation: Ndream 5s infinite 3s;
+        transform: scale(1.05);
+
+    }
+    .openAB{
+        animation: AboutME 5s;
+    }
+    .nav_3{
+        position: absolute;
+        width: 25vw;
+        top: 3%;
+        right: 10%;
+        z-index: 2;
+        animation: Ndream 5s infinite;
+        transform: scale(1.05);
+    }
+    .nav_4{
+        position: absolute;
+        width: 25vw;
+        bottom: 3%;
+        z-index: 2;
+        right: 15%;
+        animation: dream 5s infinite;
+        transition: 1s;
+    }
+    .projects101{
+        animation: prjectScale 2s;
+    }
+    @keyframes prjectScale {
+        0%{
+            z-index: 1000;
+        }
+        100%{
+            transform: scale(100);
+        }
+    }
+    .contain{
+        position: absolute;
+        left: 25vw;
+        right: 25vw;
+        top: 25vh;
+        bottom: 25vh;
+        margin: 0 auto;
+        
+    }
+    #titleSage{
+        position: absolute;
+        top: 1vh;
+        left: 10vw;
+        z-index: 1;
+    }
+    #sageChar{
+        z-index: 1;
+        position: absolute;
+        left: 18vw;
+        top: 11vh;
+    }
+    .contain img{
+        position: absolute;
+    }
+    #armSwing{
+        position: absolute;
+        z-index: 1;
+        left: 15.5vw;
+        top: 12.5vh;
+    }
+    .bub{
+        position: absolute;
+        z-index: 1;
+    }
+    #bub_1{
+        top: 5vh;
+        left: -3vw;
+        height: 3vw;
+        rotate: z 70deg;
+    }
+    #bub_2{
+        height: 2vw;
+        top: 10vh;
+        left: 5vw;
+        rotate:  z 270deg;
+    }
+    #bub_3{
+        height: 1vw;
+        top: 12vh;
+        left: 10vw;
+    }
+    #bub_4{
+        height: 1vw;
+        left: 18vw;
+        rotate: z 70deg;
+        bottom: 7vh;
+    }
+    #bub_5{
+        height: 2vw;
+        left: 13vw;
+        bottom: 2vh;
+    }
+    #bub_6{
+        height: 3vw;
+        bottom: -2vh;
+        rotate:  z 270deg;
+        left: 8vw;
+    }
+    #bub_7{
+        height: 1vw;
+        top: 20vh;
+        right: 10vw;
+        rotate:  z 270deg;
+    }
+    #bub_8{
+        height: 2vw;
+        top: 15vh;
+        right: 5vw;
+        rotate: z 70deg;
+    }
+    #bub_9{
+        height: 3vw;
+        top: 10vh;
+        right: 0vw;
+    }
+    #bub_10{
+        height: 1vw;
+        right: 20vw;
+        bottom: -3vh;
+        rotate:  z 270deg;
+    }
+    #bub_11{
+        height: 2.5vw;
+        right: 15vw;
+        bottom: -10vh;
+    }
+    #bub_12{
+        height: 4vw;
+        bottom: -17vh;
+        right: 8vw;
+        rotate: z 70deg;
+    }
+    #eyes{
+        height: 55px;
+        position: absolute;
+        z-index: 1;
+        left:18.7vw;
+        top: 9.8vh;
+        transform: rotateZ(-45deg);
+    }
+    #snot{
+        cursor: pointer;
+        position: absolute;
+        z-index: 1;
+        height: 37vh !important;
+        width: auto !important;
+        left: 37vw;
+        top: 17.2vh;
+    }
+
+
+    @keyframes dream {
+        50%{
+            transform: scale(1.05) rotate(10deg);
+        }
+        
+    }
+    @keyframes Ndream {
+        50%{
+            transform: scale(1) rotate(-10deg);
+        }
+        
+    }
+    @keyframes OpenSleep {
+        0%{
+            top:-550vh;
+            left:-300vw;
+            transform: scale(100);
+            z-index: 10;
+        }
+        100%{
+            position: absolute;
+            top:-10vh;
+            left:0vw;
+            width: 25vw;
+        }
+    }
+    @keyframes AboutME {
+        0%{
+            z-index: 2;
+        }
+        100%{
+            z-index: 2;
+            transform: scale(100);
+            translate:-100vw -500vh;
+        }
+    }
+    @keyframes ContactME {
+        100%{
+            translate: -300vw -300vh;
+            transform: scale(100);
+        }
+    }
+    .openCon {
+        animation: ContactME 5s;
+    }
+}
