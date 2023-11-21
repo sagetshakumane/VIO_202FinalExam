@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Media/CSS/about.css">
+    <title>AboutMe</title>
+</head>
+<body>
+    <div style="display: none;">
+        <audio id="openP" src="Media/sound/crumble.ogg"></audio>
+        <audio id="mountain" src="Media/sound/outside.ogg" loop></audio>
+        <audio id="paper" src="Media/sound/page.ogg" loop></audio>
+        <audio id="board" src="Media/sound/boarding.ogg" loop></audio>
+    </div>
+    <div id="soundControling" onclick="player()">
+        <img id="soundControl"src="Media/IMG/General/volume_off.svg" alt="off_sound">
+    </div>
+    <div class="ground">
+        <img id="G1"src="Media/IMG/Page_2/Graound.svg" alt="G1">
+        <img id="G2"src="Media/IMG/Page_2/Graound.svg" alt="G2">
+    </div>
+    <div class="road"></div>
+    <div class="gate">
+        <img src="Media/IMG/Page_2/fence.png" alt="f1">
+        <img src="Media/IMG/Page_2/fence.png" alt="f1">
+    </div>
+    <div class="person">
+        <img id="P1"src="Media/IMG/Page_2/Person.svg" alt="Sange">
+        <img id="SP1"src="Media/IMG/Page_2/speech.svg" alt="speech">
+    </div>
+    <div class="papers">
+        <img class="paper_1" onclick="displayInfo('edu','paper_1')" src="Media/IMG/Page_2/Paper_1.svg" alt="P1">
+        <img class="paper_2" onclick="displayInfo('gen','paper_2')" src="Media/IMG/Page_2/Paper_2.svg" alt="P1">
+        <img class="paper_3" onclick="displayInfo('lan','paper_3')" src="Media/IMG/Page_2/Paper_1.svg" alt="P1">
+        <img class="paper_4" onclick="displayInfo('pra','paper_4')" src="Media/IMG/Page_2/Paper_2.svg" alt="P1">
+        <img class="paper_5" onclick="displayInfo('mee','paper_5')" src="Media/IMG/Page_2/Paper_1.svg" alt="P1">
+    </div>
+    <div class="info">
+        <img class="edu" onclick="removeDisplay('edu','paper_1')" src="Media/IMG/Page_2/education.png" alt="Edu">
+        <img class="gen" onclick="removeDisplay('gen','paper_2')" src="Media/IMG/Page_2/general_skills.png" alt="Edu">
+        <img class="lan" onclick="removeDisplay('lan','paper_3')" src="Media/IMG/Page_2/language_skills.png" alt="Edu">
+        <img class="pra" onclick="removeDisplay('pra','paper_4')" src="Media/IMG/Page_2/practical_skills.png" alt="Edu">
+        <img class="mee" onclick="removeDisplay('mee','paper_5')" src="Media/IMG/Page_2/me.png" alt="Edu">
+    </div>
+    <div class="Home">
+        <img onclick="Home()" class="H1"src="Media/IMG/Page_2/Home.svg" alt="">
+    </div>
+    <div class="aboutMe">
+        <img class="aboutMeCloud" src="Media/IMG/Page_1/AboutmeT.svg" alt="AB">
+    </div>
+    <script>
+        var abt = document.querySelector('.aboutMeCloud');
+        setTimeout(()=>{
+            abt.classList.add('hideAboutMe');
+        },4999);
+    </script>
+    <script src="Media/JS/aboutMe.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Media/CSS/project.css">
+    <title>Projects</title>
+</head>
+<body>
+    <div>
+        <audio id="meditateMusic"src="Media/sound/Meditate.mp3"></audio>
+    </div>
+    <div class="openIt">
+        <img id="pT" src="Media/IMG/Page_1/ProjectsT.svg" alt="">
+    </div>
+    <div class="BackDrop">
+        <div class="wall"></div>
+        <div class="wallL"></div>
+        <div class="wallR"></div>
+    </div>
+    <div class="RoomObj">
+        <img class="C1" src="Media/IMG/Page_3/candle.svg" alt="candle">
+        <img class="C2" src="Media/IMG/Page_3/candle.svg" alt="candle">
+        <img class="C3" src="Media/IMG/Page_3/candle.svg" alt="candle">
+        <img class="C4" src="Media/IMG/Page_3/candle.svg" alt="candle">
+        <img class="sh1" src="Media/IMG/Page_3/bookShelf.svg" alt="shelf">
+        <img class="sh2" src="Media/IMG/Page_3/bookShelf.svg" alt="shelf">
+        <img class="yoga" src="Media/IMG/Page_3/YogaMat.svg" alt="shelf">
+        <img class="b1" src="Media/IMG/Page_3/floatBook.svg" alt="floatBook">
+        <img class="b2" src="Media/IMG/Page_3/floatBook.svg" alt="floatBook">
+    </div>
+    <div class="lighting"></div>
+    <div class="sage">
+        <img class="sange" src="Media/IMG/Page_3/SageMeditate.svg" alt="sage">
+    </div>
+    <div class="vudoBalls1">
+        <img onclick="Promo()" class="ball1" src="Media/IMG/Page_3/VudoBall.svg" alt="Ball">
+        <div>Promo</div>
+    </div>
+    <div class="vudoBalls2">
+        <img onclick="Comic()" class="ball1" src="Media/IMG/Page_3/VudoBall.svg" alt="Ball">
+        <div>Comic</div>
+    </div>
+    <div class="homePage">
+        <div class="text" onclick="goHome()"><div class="homeTxt" >HOME</div></div>
+        <div class="homeF"></div>
+    </div>
+    <div class="transitionNext"></div>
+    <script src="Media/JS/project.js"></script>
+    <script>
+        var meditateMusic = document.querySelector('#meditateMusic');
+        setTimeout(()=>{
+            meditateMusic.volume = 0.5;
+            meditateMusic.play();
+        },2500)
+    </script>
+</body>
+</html>
